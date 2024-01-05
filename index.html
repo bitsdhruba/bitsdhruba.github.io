@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <script
+      src="https://kit.fontawesome.com/b864400b2a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="blob_scene scene"></div>
+
+      <header class="header">
+        <nav class="nav-bar">
+          <div nav-bar__name>
+            <h1><a href="#home">Dhruba</a></h1>
+          </div>
+
+          <div class="nav-bar__links">
+            <ul class="links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contect</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="wave">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="main-section">
+        <section id="home" class="home hidden">
+          <div class="home__name glass">
+            <div>
+              <h1>Hi, this is</h1>
+              <h1>Dhrubajyoti Bora</h1>
+              <h1>Frontend Developer</h1>
+
+              <p>
+                Enthusiast Frontend Developer, building things from scratch, improving everyday.
+                Learning is growing and it never stops. Trying to compansate the skills i lack
+                through hard and smart work and continuous learning process.
+              </p>
+              <div>
+                <span
+                  ><a href="https://github.com/bitsdhruba"
+                    ><i class="fa-brands fa-github home__icons"></i></a
+                ></span>
+                <span
+                  ><a
+                    href="https://www.linkedin.com/in/dhrubajyoti-bora-155a491a5/"
+                    ><i class="fa-brands fa-linkedin home__icons"></i></a
+                ></span>
+              </div>
+            </div>
+            <a href="#contact"
+              ><button class="contact-button">Let's Talk</button></a
+            >
+          </div>
+          <div class="home__image">
+            <div class="profile__image"></div>
+            <div class="image__blob">
+              <svg
+                id="visual"
+                viewBox="0 0 500 500"
+                width="500"
+                height="500"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1"
+              >
+                <g transform="translate(283.68152510637753 203.44221348119834)">
+                  <path
+                    id="blob1"
+                    d="M100.6 -98.1C124 -77.3 132 -38.7 128.7 -3.3C125.4 32.1 110.8 64.1 87.4 105.8C64.1 147.4 32.1 198.7 -13.3 212C-58.7 225.4 -117.4 200.7 -153.5 159C-189.7 117.4 -203.4 58.7 -193.8 9.5C-184.3 -39.6 -151.5 -79.2 -115.4 -100C-79.2 -120.9 -39.6 -122.9 -0.5 -122.5C38.7 -122 77.3 -119 100.6 -98.1"
+                    fill="#8D8DFF"
+                  ></path>
+                </g>
+                <g
+                  transform="translate(236.7142522952554 261.69275788111656)"
+                  style="visibility: hidden"
+                >
+                  <path
+                    id="blob2"
+                    d="M151.4 -145C184.9 -117.9 192.9 -58.9 178.2 -14.7C163.5 29.5 125.9 58.9 92.4 86.3C58.9 113.6 29.5 138.8 -3.8 142.6C-37 146.3 -74 128.7 -102.3 101.3C-130.7 74 -150.3 37 -156.6 -6.2C-162.8 -49.5 -155.7 -99 -127.3 -126.2C-99 -153.3 -49.5 -158.2 4.7 -162.9C58.9 -167.6 117.9 -172.2 151.4 -145"
+                    fill="#8D8DFF"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="about hidden">
+          <div class="about__aboutme">
+            <h1 class="titles">About</h1>
+
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Quibusdam, itaque eum. Fugit tempore eius et a sunt! Minima iusto
+              sint exercitationem cupiditate expedita? Assumenda, sed ipsa et
+              perspiciatis incidunt mollitia temporibus quo, esse, aliquam nobis
+              odio repellendus soluta ea vel.
+            </p>
+          </div>
+        </section>
+
+        <section id="skills" class="skills hidden">
+          <div class="layer layer1"></div>
+          <div class="tech-stack glass">
+            <h1 class="titles">Tech Stack</h1>
+            <ul class="tech-stack__list">
+              <li>ReactJs <i class="fa-brands fa-react icons"></i></li>
+              <li>JavaScript <i class="fa-brands fa-js icons"></i></li>
+              <li>HTML<i class="fa-brands fa-html5 icons"></i></li>
+              <li>CSS <i class="fa-brands fa-css3-alt icons"></i></li>
+              <li>SQL <i class="fa-solid fa-database icons"></i></li>
+              <li>Nodejs <i class="fa-brands fa-node-js icons"></i></li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="projects" class="hidden glass project-section">
+          <h1 class="titles project__heading">My Projects</h1>
+          <div class="project__container">
+            <div class="swiper">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="project">
+                    <div>
+                      <img
+                        src="./assets/filteredByCategory.png"
+                        alt="filtering product by category"
+                        width="600"
+                        class="project__image"
+                      />
+                    </div>
+                    <div class="project__detail">
+                      <h2 class="project__title">E-commerce website</h2>
+                      <p>
+                        <b>Product Search :</b> search functionality allowing
+                        users to search for products by category. <br />
+                        <b>Product Page :</b> Each product has its dedicated
+                        page with detailed information, images, and pricing.<br />
+                        <b>Cart Page :</b> The shopping cart dynamically updates
+                        to reflect the total number of items and the overall
+                        cost, and use can seemlessly remove product from the
+                        cart.<br />
+                        <b>Technologies Used:</b> React, Redux, API.
+                      </p>
+                      <button class="project__button">Github</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="project">
+                    <div >
+                      <img
+                        src="./assets/potterHead_books.png"
+                        alt="filtering product by category"
+                        width="600"
+                        class="project__image"
+                      />
+                    </div>
+                    <div class="project__detail">
+                      <h2 class="project__title">Potter Head website</h2>
+                      <p>
+                        The website showcases information on Harry Potter
+                        movies, books, and spells through dedicated pages for
+                        each category. <br />
+
+                        <b>Technologies :</b>React: For building interactive and
+                        dynamic user interfaces.<br />
+                        React Router: Enabled smooth navigation between
+                        different pages within the application.<br />
+                        External API: Utilized an API to fetch and display
+                        real-time data for movies, books, and spells.<br />
+                      </p>
+                      <button class="project__button">Github</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="project">
+                    <div >
+                      <img
+                        src="./assets/takeAtour.png"
+                        alt="filtering product by category"
+                        width="600"
+                        class="project__image"
+                      />
+                    </div>
+                    <div class="project__detail">
+                      <h2 class="project__title">Project Title</h2>
+                      <p>
+                        Project Description Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Quisquam saepe quaerat
+                        facere quo nemo a natus cum animi dolor adipisci.
+                      </p>
+                      <button class="project__button">Github</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="project">
+                    <div >
+                      <img
+                        src="./assets/PetDogWebsite.png"
+                        alt="filtering product by category"
+                        width="600"
+                        class="project__image"
+                      />
+                    </div>
+                    <div class="project__detail">
+                      <h2 class="project__title">Project Title</h2>
+                      <p>
+                        Project Description Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Quisquam saepe quaerat
+                        facere quo nemo a natus cum animi dolor adipisci.
+                      </p>
+                      <button class="project__button">Github</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="project">
+                    <div >
+                      <img
+                        src="./assets/studyNotion.png"
+                        alt="filtering product by category"
+                        width="600"
+                        class="project__image"
+                      />
+                    </div>
+                    <div class="project__detail">
+                      <h2 class="project__title">Project Title</h2>
+                      <p>
+                        Project Description Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Quisquam saepe quaerat
+                        facere quo nemo a natus cum animi dolor adipisci.
+                      </p>
+                      <button class="project__button">Github</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="project">
+                    <div >
+                      <img
+                        src="./assets/SpotifyClone.png"
+                        alt="filtering product by category"
+                        width="600"
+                        class="project__image"
+                      />
+                    </div>
+                    <div class="project__detail">
+                      <h2 class="project__title">Project Title</h2>
+                      <p>
+                        Project Description Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Quisquam saepe quaerat
+                        facere quo nemo a natus cum animi dolor adipisci.
+                      </p>
+                      <button class="project__button">Github</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="contact__container hidden">
+          <div class="contact">
+            <h1 class="titles">Let's Connect</h1>
+            <form class="contact-form">
+              <label for="name" class="contact__label">Your name Please</label>
+              <input
+                required
+                type="text"
+                name="name"
+                id="name"
+                class="contact__input glass"
+              />
+              <label for="email" class="contact__label"
+                >Please Enter your Email</label
+              >
+              <input
+                required
+                type="email"
+                name="email"
+                id="email"
+                class="contact__input glass"
+              />
+              <label for="note" class="contact__label">Note for me</label>
+              <textarea
+                name="note"
+                id="note"
+                class="contact__input glass"
+              ></textarea>
+              <button class="contact-button">Send Message</button>
+            </form>
+            <p>
+              ** This form doesn't send me anything now, but if i build
+              something for you i'll make sure it definitely works perfectly.
+              you can contact me with my details provided.
+            </p>
+          </div>
+          <div class="contact contact__detail">
+            <h1 class="titles">Get in Touch</h1>
+            <div class="contact__touch">
+              <div>
+                <h1>Through Call</h1>
+                <h2>69004-15809</h2>
+              </div>
+              <div>
+                <i class="fa-solid fa-phone contact__icons"></i>
+              </div>
+            </div>
+            <div class="contact__touch">
+              <div>
+                <h1>Through Mail</h1>
+                <h2>borahdhruba2019@gmail.com</h2>
+              </div>
+              <div>
+                <i class="fa-regular fa-envelope contact__icons"></i>
+              </div>
+            </div>
+            <div class="contact__socials">
+              <h1>Socials</h1>
+              <span
+                ><a
+                  href="https://www.linkedin.com/in/dhrubajyoti-bora-155a491a5/"
+                  ><i
+                    class="fa-brands fa-linkedin contact-social__icons"
+                  ></i></a
+              ></span>
+              <span
+                ><a href="https://github.com/bitsdhruba"
+                  ><i class="fa-brands fa-github contact-social__icons"></i></a
+              ></span>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer hidden">
+          <div>
+            <h1 class="footer__heading">Dhruba</h1>
+            <ul class="footer__list">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Project</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <h2>Thank You for Visiting.</h2>
+        </footer>
+      </div>
+    </div>
+
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>
