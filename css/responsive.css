@@ -20,9 +20,12 @@
     .home__name h1{
         font-size: 2rem;
     }
+    .home__name p{
+        font-size: 1rem;
+    }
     .home__image{
-        display: block;
-        width: 100%;
+        top: 31rem;
+        right: 25rem;
     }
 
     .image__blob{
@@ -34,6 +37,9 @@
         left: 15rem;
         height: 10rem;
         width: 10rem
+    }
+    .contact-button{
+        scale: .8;
     }
     .about{
         display: block;
@@ -107,8 +113,13 @@
         margin: .5rem 0;
         text-align: start;
     }
+    .contact__touch h2{
+        font-size: 1rem;
+        text-align: start;
+    }
     .contact__icons{
         margin: 1rem 1rem;
+        font-size: 1.5rem;
     }
     .contact__socials h1{
         margin: 1.5rem 0 0 0;
@@ -167,7 +178,8 @@
         font-size: 3rem;
     }
     .home__image{
-        width: fit-content;
+        top: 32rem;
+        right: 49rem;
     }
     .image__blob{
         scale: .8;
@@ -184,7 +196,7 @@
     }
     .tech-stack{
         width: 100%;
-        top: -7rem;
+        top: 4rem;
     }
     .tech-stack__list li {
         display: flex;
@@ -253,7 +265,7 @@
     }
 }
 
-@media screen and (min-width: 901px) and (max-width: 1300px) {
+@media screen and (min-width: 901px) and (max-width: 1400px) {
     .titles{
         font-size: 2.5rem;
     }
@@ -268,8 +280,8 @@
     }
     .home__image{
         position: absolute;
-        top: -24%;
-        left: 56%;
+        top: -16%;
+        right: 43%;
     }
     .profile__image{
         position: absolute;
@@ -304,7 +316,7 @@
         display: block;
     }
     .project__image{
-        width: -webkit-fill-available;
+        scale: .7;
     }
     .project__detail{
         max-width: 100%;

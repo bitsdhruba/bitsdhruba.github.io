@@ -151,7 +151,6 @@ body::-webkit-scrollbar-thumb{
 }
 
 .home__image{
-    width: 40%;
     position: absolute;
     top: 10rem;
     right: -10rem;
