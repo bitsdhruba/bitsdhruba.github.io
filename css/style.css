@@ -153,7 +153,7 @@ body::-webkit-scrollbar-thumb{
 .home__image{
     position: absolute;
     top: 10rem;
-    right: -10rem;
+    right: 19rem;
 }
 
 .profile__image{
@@ -361,6 +361,12 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
     justify-content: space-evenly;
     padding: 1rem;
+}
+.project:nth-child(0){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .project:hover .project__image{
