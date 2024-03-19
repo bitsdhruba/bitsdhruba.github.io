@@ -1,326 +1,330 @@
-
 @media screen and (max-width: 450px) {
-    .nav-bar__links{
-        display: none;
-    }
-    .main-section{
-        width: 90%;
-    }
-    .home{
-        display: block;
-    }
-    .home__name{
-        width: 100%;
-        margin-top: 0;
-        padding: 1rem;
-    }
-    .home__name div {
-        margin-bottom: 0;
-    }
-    .home__name h1{
-        font-size: 2rem;
-    }
-    .home__name p{
-        font-size: 1rem;
-    }
-    .home__image{
-        top: 31rem;
-        right: 25rem;
-    }
+  .nav-bar__links {
+    display: none;
+  }
+  .nav-bar__name {
+    display: none;
+  }
+  .main-section {
+    width: 90%;
+  }
+  .home {
+    display: block;
+  }
+  .home__name {
+    width: 100%;
+    margin-top: 0;
+    padding: 1rem;
+  }
+  .home__name div {
+    margin-bottom: 0;
+  }
+  .home__name h1 {
+    font-size: 2rem;
+  }
+  .home__name p {
+    font-size: 1rem;
+  }
+  .home__image {
+    top: 31rem;
+    right: 25rem;
+  }
 
-    .image__blob{
-        display: none;
-    }
+  .image__blob {
+    display: none;
+  }
 
-    .profile__image{
-        top: -6rem;
-        left: 15rem;
-        height: 10rem;
-        width: 10rem
-    }
-    .contact-button{
-        scale: .8;
-    }
-    .about{
-        display: block;
-    }
-    .about__aboutme{
-        width: 100%;
-        margin: 0;
-
-    }
-    .titles{
-        font-size: 2rem;
-    }
-    .skills{
-        position: static;
-    }
-    .tech-stack{
-        width: 100%;
-        position: static;
-    }
-    .tech-stack__list{
-        display: block;
-    }
-    .project-section{
-        margin-top: 4rem;
-    }
-    .project{
-        margin: 1rem;
-        display: block;
-        padding: 0;
-    }
-    .project__image{
-        width: -webkit-fill-available;
-    }
-    .project__detail{
-        max-width: 100%;
-
-    }
-    .project__container{
-        margin: 0;
-        padding: 0;
-    }
-    .contact__container{
-        margin-top: 4rem;
-        display: block;
-    }
-    .contact{
-        width: 100%;
-        margin-top: 3rem;
-    }
-    .contact__label{
-        font-size: 1rem;
-    }
-    .contact__input{
-        width: 100%;
-        height: 2.5rem;
-        padding: .25rem;
-        margin: .5rem 0 1rem 0;
-        font-size: 1.2rem;
-    }
-    .contact p {
-        margin-top: 1rem;
-    }
-    .contact__detail{
-        display: block;
-    }
-    .contact__touch{
-        justify-content: space-between;
-    }
-    .contact__touch h1{
-        font-size: 1rem;
-        margin: .5rem 0;
-        text-align: start;
-    }
-    .contact__touch h2{
-        font-size: 1rem;
-        text-align: start;
-    }
-    .contact__icons{
-        margin: 1rem 1rem;
-        font-size: 1.5rem;
-    }
-    .contact__socials h1{
-        margin: 1.5rem 0 0 0;
-        text-align: start;
-    }
-    .contact-social__icons{
-        margin: 1rem .5rem;
-    }
-    .footer{
-        margin: 3rem 0;
-    }
-    .footer div{
-        margin-top: 2rem;
-    }
-    .footer__heading{
-        margin: 0;
-        font-size: 2rem;
-    }
-    .footer__list li{
-        font-size: 1.2rem;
-    }
-    .footer h2 {
-        font-size: 1.5rem;
-        margin-top: 2rem;
-    }
-    .project__heading{
-        margin-bottom: 1rem;
-    }
+  .profile__image {
+    top: -6rem;
+    left: 15rem;
+    height: 10rem;
+    width: 10rem;
+  }
+  .contact-button {
+    scale: 0.8;
+  }
+  .about {
+    display: block;
+  }
+  .about__aboutme {
+    width: 100%;
+    margin: 0;
+  }
+  .titles {
+    font-size: 2rem;
+  }
+  .skills {
+    position: static;
+  }
+  .tech-stack {
+    width: 100%;
+    position: static;
+  }
+  .tech-stack__list {
+    display: block;
+  }
+  .project-section {
+    margin-top: 4rem;
+  }
+  .project {
+    margin: 1rem;
+    display: block;
+    padding: 0;
+  }
+  .project__image {
+    width: -webkit-fill-available;
+  }
+  .project__detail {
+    max-width: 100%;
+  }
+  .project__container {
+    margin: 0;
+    padding: 0;
+  }
+  .contact__container {
+    margin-top: 4rem;
+    display: block;
+  }
+  .contact {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .contact__label {
+    font-size: 1rem;
+  }
+  .contact__input {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.25rem;
+    margin: 0.5rem 0 1rem 0;
+    font-size: 1.2rem;
+  }
+  .contact p {
+    margin-top: 1rem;
+  }
+  .contact__detail {
+    display: block;
+  }
+  .contact__touch {
+    justify-content: space-between;
+  }
+  .contact__touch h1 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    text-align: start;
+  }
+  .contact__touch h2 {
+    font-size: 1rem;
+    text-align: start;
+  }
+  .contact__icons {
+    margin: 1rem 1rem;
+    font-size: 1.5rem;
+  }
+  .contact__socials h1 {
+    margin: 1.5rem 0 0 0;
+    text-align: start;
+  }
+  .contact-social__icons {
+    margin: 1rem 0.5rem;
+  }
+  .footer {
+    margin: 3rem 0;
+  }
+  .footer div {
+    margin-top: 2rem;
+  }
+  .footer__heading {
+    margin: 0;
+    font-size: 2rem;
+  }
+  .footer__list {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.3rem;
+  }
+  .footer__list li {
+    font-size: 1.2rem;
+  }
+  .footer h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  .project__heading {
+    margin-bottom: 1rem;
+  }
 }
 
-@media screen and (min-width: 451px )and (max-width: 900px) {
-    .main-section{
-        width: 90%;
-    }
-    .nav-bar__links{
-        width: fit-content;
-    }
-    .links li a {
-        margin: 1rem;
-        font-size: 1rem;
-    }
-    .titles{
-        font-size: 2.5rem;
-    }
-    .home{
-        display: block;
-    }
-    .home__name{
-        width: 100%;
-        margin-top: 0;
-    }
-    .home__name div {
-        margin-bottom: 0;
-    }
-    .home__name h1{
-        font-size: 3rem;
-    }
-    .home__image{
-        top: 32rem;
-        right: 49rem;
-    }
-    .image__blob{
-        scale: .8;
-        top: -13rem;
-        left: 23rem;
-    }
-    .profile__image{
-        top: -13rem;
-        left: 30rem;
-        scale: 0.6;
-    }
-    .about__aboutme{
-        width: 100%;
-    }
-    .tech-stack{
-        width: 100%;
-        top: 4rem;
-    }
-    .tech-stack__list li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        padding: .25rem;
-    }
-    .project{
-        margin: 1rem;
-        display: block;
-    }
-    .project__image{
-        width: -webkit-fill-available;
-    }
-    .project__detail{
-        margin: 0;
-        max-width: 100%;
-    }
-    .contact__container{
-        display: block;
-    }
-    .contact{
-        width: 100%;
-    }
-    .contact__input{
-        height: 2.5rem;
-        padding: .25rem;
-        margin: .5rem 0 1rem 0;
-    }
-    .contact__touch{
-        margin: .5rem 0;
-    }
-    .contact__touch h1{
-        margin: .5rem 0;
-        font-size: 1.2rem;
-    }
-    .contact__icons{
-        margin: 1rem 1rem;
-    }
-    .contact__socials h1{
-        margin: 1rem 1rem 0 0;
-        font-size: 1.2rem;
-    }
-    .contact-social__icons{
-        margin: 1rem 1rem;
-    }
-    .footer{
-        margin-top: 5rem;
-        margin: 0;
-    }
-    .footer div{
-        margin-top: 2rem;
-    }
-    .footer__heading{
-        margin: 0;
-        font-size: 2rem;
-    }
-    .footer__list li {
-        font-size: 1rem;
-        margin: .5rem;
-    }
-    .footer h2 {
-        font-size: 1.4rem;
-        margin: 1rem;
-    }
+@media screen and (min-width: 451px) and (max-width: 900px) {
+  .main-section {
+    width: 90%;
+  }
+  .nav-bar__links {
+    width: fit-content;
+  }
+  .links li a {
+    margin: 1rem;
+    font-size: 1rem;
+  }
+  .titles {
+    font-size: 2.5rem;
+  }
+  .home {
+    display: block;
+  }
+  .home__name {
+    width: 100%;
+    margin-top: 0;
+  }
+  .home__name div {
+    margin-bottom: 0;
+  }
+  .home__name h1 {
+    font-size: 3rem;
+  }
+  .home__image {
+    top: 32rem;
+    right: 49rem;
+  }
+  .image__blob {
+    scale: 0.8;
+    top: -13rem;
+    left: 23rem;
+  }
+  .profile__image {
+    top: -13rem;
+    left: 30rem;
+    scale: 0.6;
+  }
+  .about__aboutme {
+    width: 100%;
+  }
+  .tech-stack {
+    width: 100%;
+    top: 4rem;
+  }
+  .tech-stack__list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0.25rem;
+  }
+  .project {
+    margin: 1rem;
+    display: block;
+  }
+  .project__image {
+    width: -webkit-fill-available;
+  }
+  .project__detail {
+    margin: 0;
+    max-width: 100%;
+  }
+  .contact__container {
+    display: block;
+  }
+  .contact {
+    width: 100%;
+  }
+  .contact__input {
+    height: 2.5rem;
+    padding: 0.25rem;
+    margin: 0.5rem 0 1rem 0;
+  }
+  .contact__touch {
+    margin: 0.5rem 0;
+  }
+  .contact__touch h1 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+  }
+  .contact__icons {
+    margin: 1rem 1rem;
+  }
+  .contact__socials h1 {
+    margin: 1rem 1rem 0 0;
+    font-size: 1.2rem;
+  }
+  .contact-social__icons {
+    margin: 1rem 1rem;
+  }
+  .footer {
+    margin-top: 5rem;
+    margin: 0;
+  }
+  .footer div {
+    margin-top: 2rem;
+  }
+  .footer__heading {
+    margin: 0;
+    font-size: 2rem;
+  }
+  .footer__list li {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+  .footer h2 {
+    font-size: 1.4rem;
+    margin: 1rem;
+  }
 }
 
 @media screen and (min-width: 901px) and (max-width: 1400px) {
-    .titles{
-        font-size: 2.5rem;
-    }
-    .home{
-        display: block;
-    }
-    .home__name{
-        width: 100%;
-    }
-    .home__name h1{
-        font-size: 4rem;
-    }
-    .home__image{
-        position: absolute;
-        top: -17%;
-        right: 43%;
-    }
-    .profile__image{
-        position: absolute;
-        scale: .6;
-        top: 2rem;
-        left: 3rem;
-    }
-    .image__blob{
-        position: absolute;
-        scale: .8;
-        top: 0;
-        left: 0;
-    }
-    .about__aboutme{
-        width: 100%;
-    }
-    .skills{
-        margin-bottom: 15rem;
-    }
-    .tech-stack{
-        width: 100%;
-        position: absolute;
-        top: 9rem;
-    }
-    .tech-stack__list li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .project{
-        margin: 1.5rem;
-        display: block;
-    }
-    .project__image{
-        scale: .7;
-    }
-    .project__detail{
-        max-width: 100%;
-        padding: 0;
-    }
-
+  .titles {
+    font-size: 2.5rem;
+  }
+  .home {
+    display: block;
+  }
+  .home__name {
+    width: 100%;
+  }
+  .home__name h1 {
+    font-size: 4rem;
+  }
+  .home__image {
+    position: absolute;
+    top: -17%;
+    right: 43%;
+  }
+  .profile__image {
+    position: absolute;
+    scale: 0.6;
+    top: 2rem;
+    left: 3rem;
+  }
+  .image__blob {
+    position: absolute;
+    scale: 0.8;
+    top: 0;
+    left: 0;
+  }
+  .about__aboutme {
+    width: 100%;
+  }
+  .skills {
+    margin-bottom: 15rem;
+  }
+  .tech-stack {
+    width: 100%;
+    position: absolute;
+    top: 9rem;
+  }
+  .tech-stack__list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .project {
+    margin: 1.5rem;
+    display: block;
+  }
+  .project__image {
+    scale: 0.7;
+  }
+  .project__detail {
+    max-width: 100%;
+    padding: 0;
+  }
 }
