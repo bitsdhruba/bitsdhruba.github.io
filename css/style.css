@@ -237,6 +237,9 @@ body::-webkit-scrollbar-thumb {
   border-radius: 1.8rem;
   font-family: IBM Plex Mono;
 }
+.contact-button a {
+  text-decoration: none;
+}
 
 .contact-button:hover {
   background-color: rgb(193, 193, 253);
@@ -270,11 +273,7 @@ body::-webkit-scrollbar-thumb {
   width: 60%;
   padding: 1rem;
   margin: 1rem;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.178),
-    rgba(255, 255, 255, 0)
-  );
+  background: linear-gradient(135deg, #8d8dff60, rgba(255, 255, 255, 0.055));
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -411,13 +410,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .project__detail {
-  min-height: fit-content;
   max-width: 50%;
-  padding: 1rem;
   margin: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -432,14 +429,30 @@ body::-webkit-scrollbar-thumb {
   margin: 1rem;
 }
 
-.project__button {
+.project__button_div {
   margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project__button {
+  margin: 0 0.5rem;
   width: 8rem;
   height: 3rem;
   border-radius: 0.8rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: IBM Plex Mono;
   border: 1px solid rgb(97, 104, 122);
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0.9;
+  cursor: not-allowed;
+}
+
+.project__button a {
+  text-decoration: none;
+  font-size: 1.1rem;
 }
 
 .project__button:hover {

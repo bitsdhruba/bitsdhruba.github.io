@@ -66,8 +66,15 @@
   .project-section {
     margin-top: 4rem;
   }
+
+  .swiper {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
   .project {
-    margin: 1rem;
+    margin: 0;
     display: block;
     padding: 0;
   }
@@ -76,6 +83,12 @@
   }
   .project__detail {
     max-width: 100%;
+    margin: 0;
+  }
+
+  .project__detail p {
+    text-align: inherit;
+    padding: 0.5rem;
   }
   .project__container {
     margin: 0;
@@ -133,15 +146,16 @@
   }
   .footer div {
     margin-top: 2rem;
+    display: block;
   }
+
   .footer__heading {
     margin: 0;
     font-size: 2rem;
   }
   .footer__list {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    display: block;
   }
   .footer__list li {
     font-size: 1.2rem;

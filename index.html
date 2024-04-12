@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Dhruba Portfolio</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
@@ -20,7 +20,7 @@
 
       <header class="header">
         <nav class="nav-bar">
-          <div nav-bar__name>
+          <div class="nav-bar__name">
             <h1><a href="#home">Dhruba</a></h1>
           </div>
 
@@ -58,9 +58,9 @@
               <h1>Frontend Developer</h1>
 
               <p>
-                Enthusiast Frontend Developer, building things from scratch, improving everyday.
-                Learning is growing and it never stops. Trying to compansate the skills i lack
-                through hard and smart work and continuous learning process.
+                Enthusiast Frontend Developer, building and breaking things to
+                build again. Trying to compansate the skills i lack through
+                working smartly hard enough and continuous learning process.
               </p>
               <div>
                 <span
@@ -74,9 +74,9 @@
                 ></span>
               </div>
             </div>
-            <a href="#contact"
-              ><button class="contact-button">Let's Talk</button></a
-            >
+            <button class="contact-button">
+              <a href="#contact">Let's Talk</a>
+            </button>
           </div>
           <div class="home__image">
             <div class="profile__image"></div>
@@ -112,16 +112,21 @@
           </div>
         </section>
 
-        <section id="about" class="about hidden">
+        <section id="about" class="about hidden glass">
           <div class="about__aboutme">
             <h1 class="titles">About</h1>
 
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Quibusdam, itaque eum. Fugit tempore eius et a sunt! Minima iusto
-              sint exercitationem cupiditate expedita? Assumenda, sed ipsa et
-              perspiciatis incidunt mollitia temporibus quo, esse, aliquam nobis
-              odio repellendus soluta ea vel.
+              I'm a passionate Frontend developer with the experience in
+              developing webapp using ReactJS. I'm working on ReactJS,
+              JavaScript and TailwindCSS and I'm always eager to take on new
+              challenges.
+              <br />
+              <br />
+              I'm always looking for opportunities to collaborate on creative
+              and innovative projects.
+              <br />
+              Let's get connected.
             </p>
           </div>
         </section>
@@ -136,7 +141,6 @@
               <li>HTML<i class="fa-brands fa-html5 icons"></i></li>
               <li>CSS <i class="fa-brands fa-css3-alt icons"></i></li>
               <li>SQL <i class="fa-solid fa-database icons"></i></li>
-              <li>Nodejs <i class="fa-brands fa-node-js icons"></i></li>
             </ul>
           </div>
         </section>
@@ -160,26 +164,147 @@
                     <div class="project__detail">
                       <h2 class="project__title">E-commerce website</h2>
                       <p>
-                        <b>Product Search :</b> search functionality allowing
-                        users to search for products by category. <br />
-                        <b>Product Page :</b> Each product has its dedicated
-                        page with detailed information, images, and pricing.<br />
-                        <b>Cart Page :</b> The shopping cart dynamically updates
-                        to reflect the total number of items and the overall
-                        cost, and use can seemlessly remove product from the
-                        cart.<br />
-                        <b>Technologies Used:</b> React, Redux, API.
+                        Product Search by category, Product detail Page, Cart
+                        Page dynamically updates total number of items,user can
+                        remove product from the cart. Technologies: React,
+                        Redux, React-Router, TailwindCSS.
                       </p>
-                      <button class="project__button">Github</button>
+                      <div class="project__button_div">
+                        <a
+                          href="https://github.com/bitsdhruba/shopit.1.0"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          ><button class="project__button">Github</button></a
+                        >
+
+                        <a
+                          ><button class="project__button disabled" disabled>
+                            Visit Site
+                          </button></a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                   <div class="project">
-                    <div >
+                    <div>
+                      <img
+                        src="./assets/koinx_single_coin.png"
+                        alt="single coin"
+                        width="600"
+                        class="project__image"
+                      />
+                    </div>
+                    <div class="project__detail">
+                      <h2 class="project__title">KoinX</h2>
+                      <p>
+                        Home page dynamically renders list of trending
+                        Cryptocurrencies, select one to get in-depth details
+                        about the coin with market data, chart and much more.
+                        Technologies: Rect, React-Router, TailwindCSS.
+                      </p>
+                      <div class="project__button_div">
+                        <a
+                          href="https://github.com/bitsdhruba/koinX"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          ><button class="project__button">Github</button></a
+                        >
+
+                        <a
+                          href="https://vermillion-strudel-f98f5b.netlify.app"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          ><button class="project__button">
+                            Visit Site
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="project">
+                    <div>
+                      <img
+                        src="./assets/studyNotion_8.png"
+                        alt="studyNotion"
+                        width="600"
+                        class="project__image"
+                      />
+                    </div>
+                    <div class="project__detail">
+                      <h2 class="project__title">StudyNotion</h2>
+                      <p>
+                        Course choosing website showing courses, like it to add
+                        in the dashboard. Login or sign up to get access to the
+                        dashboard.
+                      </p>
+                      <div class="project__button_div">
+                        <a
+                          href="https://github.com/bitsdhruba/studyNotion"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          ><button class="project__button">Github</button></a
+                        >
+
+                        <a
+                          ><button class="project__button disabled" disabled>
+                            Visit Site
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="project">
+                    <div>
+                      <img
+                        src="./assets/blogspot_2.png"
+                        alt="blogspot"
+                        width="600"
+                        class="project__image"
+                      />
+                    </div>
+                    <div class="project__detail">
+                      <h2 class="project__title">BlogSpot</h2>
+                      <p>
+                        Blogging website showing blogs in different pages, eeach
+                        post has own page, related blogs are shown based on the
+                        current blog category, view blogs on a specific
+                        category.
+                      </p>
+                      <div class="project__button_div">
+                        <a
+                          href="https://github.com/bitsdhruba/letitflow"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          ><button class="project__button">Github</button></a
+                        >
+
+                        <a
+                          href="https://blogspotbitsdhruba.netlify.app"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          ><button class="project__button">
+                            Visit Site
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="project">
+                    <div>
                       <img
                         src="./assets/potterHead_books.png"
-                        alt="filtering product by category"
+                        alt="potter head"
                         width="600"
                         class="project__image"
                       />
@@ -187,102 +312,60 @@
                     <div class="project__detail">
                       <h2 class="project__title">Potter Head website</h2>
                       <p>
-                        The website showcases information on Harry Potter
-                        movies, books, and spells through dedicated pages for
-                        each category. <br />
+                        The website showcases all Harry Potter movies, books,
+                        and spells through dedicated pages for each category.
+                        Technologies: Rect, React-Router, TailwindCSS.
+                      </p>
+                      <div class="project__button_div">
+                        <a
+                          href="https://github.com/bitsdhruba/potterhead"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          ><button class="project__button">Github</button></a
+                        >
 
-                        <b>Technologies :</b>React: For building interactive and
-                        dynamic user interfaces.<br />
-                        React Router: Enabled smooth navigation between
-                        different pages within the application.<br />
-                        External API: Utilized an API to fetch and display
-                        real-time data for movies, books, and spells.<br />
-                      </p>
-                      <button class="project__button">Github</button>
+                        <a
+                          ><button class="project__button disabled" disabled>
+                            Visit Site
+                          </button></a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
+
                 <div class="swiper-slide">
                   <div class="project">
-                    <div >
-                      <img
-                        src="./assets/takeAtour.png"
-                        alt="filtering product by category"
-                        width="600"
-                        class="project__image"
-                      />
-                    </div>
-                    <div class="project__detail">
-                      <h2 class="project__title">Project Title</h2>
-                      <p>
-                        Project Description Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Quisquam saepe quaerat
-                        facere quo nemo a natus cum animi dolor adipisci.
-                      </p>
-                      <button class="project__button">Github</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div >
+                    <div>
                       <img
                         src="./assets/PetDogWebsite.png"
-                        alt="filtering product by category"
+                        alt="Pet dog"
                         width="600"
                         class="project__image"
                       />
                     </div>
                     <div class="project__detail">
-                      <h2 class="project__title">Project Title</h2>
+                      <h2 class="project__title">Adopt a Dog</h2>
                       <p>
-                        Project Description Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Quisquam saepe quaerat
-                        facere quo nemo a natus cum animi dolor adipisci.
+                        A simple website that shows grids of options to select
+                        or remove from the options. The page refreshes when all
+                        the options are removed. Built using React and
+                        TailwindCSS.
                       </p>
-                      <button class="project__button">Github</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div >
-                      <img
-                        src="./assets/studyNotion.png"
-                        alt="filtering product by category"
-                        width="600"
-                        class="project__image"
-                      />
-                    </div>
-                    <div class="project__detail">
-                      <h2 class="project__title">Project Title</h2>
-                      <p>
-                        Project Description Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Quisquam saepe quaerat
-                        facere quo nemo a natus cum animi dolor adipisci.
-                      </p>
-                      <button class="project__button">Github</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div >
-                      <img
-                        src="./assets/SpotifyClone.png"
-                        alt="filtering product by category"
-                        width="600"
-                        class="project__image"
-                      />
-                    </div>
-                    <div class="project__detail">
-                      <h2 class="project__title">Project Title</h2>
-                      <p>
-                        Project Description Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Quisquam saepe quaerat
-                        facere quo nemo a natus cum animi dolor adipisci.
-                      </p>
-                      <button class="project__button">Github</button>
+                      <div class="project__button_div">
+                        <a
+                          href="https://github.com/bitsdhruba/adopt_a_dog"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          ><button class="project__button">Github</button></a
+                        >
+
+                        <a
+                          ><button class="project__button disabled" disabled>
+                            Visit Site
+                          </button></a
+                        >
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -367,7 +450,6 @@
 
         <footer class="footer hidden">
           <div>
-            <h1 class="footer__heading">Dhruba</h1>
             <ul class="footer__list">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
