@@ -10,6 +10,7 @@
   }
   .home {
     display: block;
+    min-height: 92vh;
   }
   .home__name {
     width: 100%;
@@ -20,13 +21,13 @@
     margin-bottom: 0;
   }
   .home__name h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .home__name p {
     font-size: 1rem;
   }
   .home__image {
-    top: 31rem;
+    top: 29rem;
     right: 25rem;
   }
 
@@ -50,11 +51,14 @@
     width: 100%;
     margin: 0;
   }
+
   .titles {
     font-size: 2rem;
   }
+
   .skills {
     position: static;
+    margin-bottom: 5rem;
   }
   .tech-stack {
     width: 100%;
@@ -63,12 +67,8 @@
   .tech-stack__list {
     display: block;
   }
-  .project-section {
-    margin-top: 4rem;
-  }
 
-  .swiper {
-    width: 100%;
+  .project__container {
     margin: 0;
     padding: 0;
   }
@@ -77,23 +77,37 @@
     margin: 0;
     display: block;
     padding: 0;
+    width: 100%;
   }
+
+  .project:hover .project__detail {
+    height: 100%;
+  }
+
   .project__image {
     width: -webkit-fill-available;
   }
+
   .project__detail {
     max-width: 100%;
     margin: 0;
   }
 
+  .project__title {
+    margin: 0.5rem 0 0 0;
+  }
+
   .project__detail p {
-    text-align: inherit;
     padding: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
-  .project__container {
-    margin: 0;
-    padding: 0;
+
+  .project__button_div {
+    margin: 0.5rem 0;
   }
+
   .contact__container {
     margin-top: 4rem;
     display: block;
@@ -101,26 +115,25 @@
   .contact {
     width: 100%;
     margin-top: 3rem;
+    flex-direction: column;
   }
-  .contact__label {
-    font-size: 1rem;
+
+  .contact .navigation {
+    justify-content: center;
   }
-  .contact__input {
-    width: 100%;
-    height: 2.5rem;
-    padding: 0.25rem;
-    margin: 0.5rem 0 1rem 0;
-    font-size: 1.2rem;
-  }
+
   .contact p {
     margin-top: 1rem;
   }
   .contact__detail {
     display: block;
   }
-  .contact__touch {
-    justify-content: space-between;
+
+  .footer__list {
+    font-size: 1.2rem;
+    gap: 0;
   }
+
   .contact__touch h1 {
     font-size: 1rem;
     margin: 0.5rem 0;
@@ -140,6 +153,7 @@
   }
   .contact-social__icons {
     margin: 1rem 0.5rem;
+    font-size: 2.5rem;
   }
   .footer {
     margin: 3rem 0;
@@ -152,10 +166,6 @@
   .footer__heading {
     margin: 0;
     font-size: 2rem;
-  }
-  .footer__list {
-    font-size: 1.2rem;
-    display: block;
   }
   .footer__list li {
     font-size: 1.2rem;
@@ -330,15 +340,17 @@
     flex-direction: column;
     align-items: center;
   }
+
   .project {
-    margin: 1.5rem;
-    display: block;
+    width: 90%;
   }
-  .project__image {
-    scale: 0.7;
-  }
+
   .project__detail {
     max-width: 100%;
     padding: 0;
+  }
+
+  .footer__list {
+    gap: 3rem;
   }
 }

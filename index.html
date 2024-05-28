@@ -6,12 +6,13 @@
     <title>Dhruba Portfolio</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <script
       src="https://kit.fontawesome.com/b864400b2a.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/swiper-bundle.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
   </head>
   <body>
@@ -29,7 +30,7 @@
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#projects">Projects</a></li>
-              <li><a href="#contact">Contect</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -50,13 +51,14 @@
       </div>
 
       <div class="main-section">
-        <section id="home" class="home hidden">
-          <div class="home__name glass">
-            <div>
-              <h1>Hi, this is</h1>
+        <section id="home" class="home">
+          <div class="home__name glass" data-aos="fade-right">
+            <div class="home_name_heading">
+              <h1>Hi, I'm</h1>
               <h1>Dhrubajyoti Bora</h1>
               <h1>Frontend Developer</h1>
-
+            </div>
+            <div class="home__name_para">
               <p>
                 Enthusiast Frontend Developer, building and breaking things to
                 build again. Trying to compansate the skills i lack through
@@ -74,11 +76,8 @@
                 ></span>
               </div>
             </div>
-            <button class="contact-button">
-              <a href="#contact">Let's Talk</a>
-            </button>
           </div>
-          <div class="home__image">
+          <div class="home__image" data-aos="fade-left">
             <div class="profile__image"></div>
             <div class="image__blob">
               <svg
@@ -112,8 +111,8 @@
           </div>
         </section>
 
-        <section id="about" class="about hidden glass">
-          <div class="about__aboutme">
+        <section id="about" class="about">
+          <div class="about__aboutme" data-aos="fade-left">
             <h1 class="titles">About</h1>
 
             <p>
@@ -131,9 +130,9 @@
           </div>
         </section>
 
-        <section id="skills" class="skills hidden">
+        <section id="skills" class="skills">
           <div class="layer layer1"></div>
-          <div class="tech-stack glass">
+          <div class="tech-stack glass" data-aos="fade-right">
             <h1 class="titles">Tech Stack</h1>
             <ul class="tech-stack__list">
               <li>ReactJs <i class="fa-brands fa-react icons"></i></li>
@@ -145,296 +144,239 @@
           </div>
         </section>
 
-        <section id="projects" class="hidden glass project-section">
+        <section id="projects" class="project-section">
           <h1 class="titles project__heading">My Projects</h1>
           <div class="project__container">
-            <div class="swiper">
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div>
-                      <img
-                        src="./assets/productAddedToCart.png"
-                        alt="filtering product by category"
-                        width="600"
-                        class="project__image"
-                      />
-                    </div>
-                    <div class="project__detail">
-                      <h2 class="project__title">E-commerce website</h2>
-                      <p>
-                        Product Search by category, Product detail Page, Cart
-                        Page dynamically updates total number of items,user can
-                        remove product from the cart. Technologies: React,
-                        Redux, React-Router, TailwindCSS.
-                      </p>
-                      <div class="project__button_div">
-                        <a
-                          href="https://github.com/bitsdhruba/shopbits"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          ><button class="project__button">Github</button></a
-                        >
+            <div
+              class="project"
+              data-aos="fade-up-right"
+              style="--clr: #5e548e"
+            >
+              <div>
+                <img
+                  src="./assets/productAddedToCart.png"
+                  alt="filtering product by category"
+                  class="project__image"
+                />
+              </div>
+              <div class="project__detail">
+                <h2 class="project__title">E-commerce website</h2>
+                <p>
+                  Product Search by category, Product detail Page, Cart Page
+                  dynamically updates total number of items,user can remove
+                  product from the cart. Technologies: React, Redux,
+                  React-Router, TailwindCSS.
+                </p>
+                <div class="project__button_div">
+                  <a
+                    href="https://github.com/bitsdhruba/shopbits"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><button class="project__button">Github</button></a
+                  >
 
-                        <a
-                          href="https://shopbits.netlify.app"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          ><button class="project__button">
-                            Visit Site
-                          </button></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div>
-                      <img
-                        src="./assets/koinx_single_coin.png"
-                        alt="single coin"
-                        width="600"
-                        class="project__image"
-                      />
-                    </div>
-                    <div class="project__detail">
-                      <h2 class="project__title">KoinX</h2>
-                      <p>
-                        Home page dynamically renders list of trending
-                        Cryptocurrencies, select one to get in-depth details
-                        about the coin with market data, chart and much more.
-                        Technologies: Rect, React-Router, TailwindCSS.
-                      </p>
-                      <div class="project__button_div">
-                        <a
-                          href="https://github.com/bitsdhruba/koinX"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          ><button class="project__button">Github</button></a
-                        >
-
-                        <a
-                          href="https://vermillion-strudel-f98f5b.netlify.app"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          ><button class="project__button">
-                            Visit Site
-                          </button></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div>
-                      <img
-                        src="./assets/studyNotion_8.png"
-                        alt="studyNotion"
-                        width="600"
-                        class="project__image"
-                      />
-                    </div>
-                    <div class="project__detail">
-                      <h2 class="project__title">StudyNotion</h2>
-                      <p>
-                        Course choosing website showing courses, like it to add
-                        in the dashboard. Login or sign up to get access to the
-                        dashboard.
-                      </p>
-                      <div class="project__button_div">
-                        <a
-                          href="https://github.com/bitsdhruba/techition"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          ><button class="project__button">Github</button></a
-                        >
-
-                        <a
-                          href="https://bitstechition.netlify.app"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          ><button class="project__button">
-                            Visit Site
-                          </button></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div>
-                      <img
-                        src="./assets/blogspot_2.png"
-                        alt="blogspot"
-                        width="600"
-                        class="project__image"
-                      />
-                    </div>
-                    <div class="project__detail">
-                      <h2 class="project__title">BlogSpot</h2>
-                      <p>
-                        Blogging website showing blogs in different pages, eeach
-                        post has own page, related blogs are shown based on the
-                        current blog category, view blogs on a specific
-                        category.
-                      </p>
-                      <div class="project__button_div">
-                        <a
-                          href="https://github.com/bitsdhruba/letitflow"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          ><button class="project__button">Github</button></a
-                        >
-
-                        <a
-                          href="https://blogspotbitsdhruba.netlify.app"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          ><button class="project__button">
-                            Visit Site
-                          </button></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div>
-                      <img
-                        src="./assets/potterHead_books.png"
-                        alt="potter head"
-                        width="600"
-                        class="project__image"
-                      />
-                    </div>
-                    <div class="project__detail">
-                      <h2 class="project__title">Potter Head website</h2>
-                      <p>
-                        The website showcases all Harry Potter movies, books,
-                        and spells through dedicated pages for each category.
-                        Technologies: Rect, React-Router, TailwindCSS.
-                      </p>
-                      <div class="project__button_div">
-                        <a
-                          href="https://github.com/bitsdhruba/potterhead"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          ><button class="project__button">Github</button></a
-                        >
-
-                        <a
-                          ><button class="project__button disabled" disabled>
-                            Visit Site
-                          </button></a
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <div class="project">
-                    <div>
-                      <img
-                        src="./assets/PetDogWebsite.png"
-                        alt="Pet dog"
-                        width="600"
-                        class="project__image"
-                      />
-                    </div>
-                    <div class="project__detail">
-                      <h2 class="project__title">Adopt a Dog</h2>
-                      <p>
-                        A simple website that shows grids of options to select
-                        or remove from the options. The page refreshes when all
-                        the options are removed. Built using React and
-                        TailwindCSS.
-                      </p>
-                      <div class="project__button_div">
-                        <a
-                          href="https://github.com/bitsdhruba/adopt_a_dog"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          ><button class="project__button">Github</button></a
-                        >
-
-                        <a
-                          ><button class="project__button disabled" disabled>
-                            Visit Site
-                          </button></a
-                        >
-                      </div>
-                    </div>
-                  </div>
+                  <a
+                    href="https://shopbits.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><button class="project__button">Visit Site</button></a
+                  >
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="project" data-aos="fade-up-left" style="--clr: #4361ee">
+              <div>
+                <img
+                  src="./assets/koinx_single_coin.png"
+                  alt="single coin"
+                  class="project__image"
+                />
+              </div>
+              <div class="project__detail">
+                <h2 class="project__title">KoinX</h2>
+                <p>
+                  Home page dynamically renders list of trending
+                  Cryptocurrencies, select one to get in-depth details about the
+                  coin with market data, chart and much more. Technologies:
+                  Rect, React-Router, TailwindCSS.
+                </p>
+                <div class="project__button_div">
+                  <a
+                    href="https://github.com/bitsdhruba/koinX"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><button class="project__button">Github</button></a
+                  >
+
+                  <a
+                    href="https://vermillion-strudel-f98f5b.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><button class="project__button">Visit Site</button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="project"
+              data-aos="fade-up-right"
+              style="--clr: #003566"
+            >
+              <div>
+                <img
+                  src="./assets/studyNotion_8.png"
+                  alt="studyNotion"
+                  class="project__image"
+                />
+              </div>
+              <div class="project__detail">
+                <h2 class="project__title">StudyNotion</h2>
+                <p>
+                  Course choosing website showing courses, like it to add in the
+                  dashboard. Login or sign up to get access to the dashboard.
+                </p>
+                <div class="project__button_div">
+                  <a
+                    href="https://github.com/bitsdhruba/techition"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><button class="project__button">Github</button></a
+                  >
+
+                  <a
+                    href="https://bitstechition.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><button class="project__button">Visit Site</button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project" data-aos="fade-up-left" style="--clr: #ffd60a">
+              <div>
+                <img
+                  src="./assets/blogspot_2.png"
+                  alt="blogspot"
+                  class="project__image"
+                />
+              </div>
+              <div class="project__detail">
+                <h2 class="project__title">BlogSpot</h2>
+                <p>
+                  Blogging website showing blogs in different pages, eeach post
+                  has own page, related blogs are shown based on the current
+                  blog category, view blogs on a specific category.
+                </p>
+                <div class="project__button_div">
+                  <a
+                    href="https://github.com/bitsdhruba/letitflow"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><button class="project__button">Github</button></a
+                  >
+
+                  <a
+                    href="https://blogspotbitsdhruba.netlify.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><button class="project__button">Visit Site</button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="project"
+              data-aos="fade-up-right"
+              style="--clr: #2c7da0"
+            >
+              <div>
+                <img
+                  src="./assets/potterHead_books.png"
+                  alt="potter head"
+                  class="project__image"
+                />
+              </div>
+              <div class="project__detail">
+                <h2 class="project__title">Potter Head website</h2>
+                <p>
+                  The website showcases all Harry Potter movies, books, and
+                  spells through dedicated pages for each category.
+                  Technologies: Rect, React-Router, TailwindCSS.
+                </p>
+                <div class="project__button_div">
+                  <a
+                    href="https://github.com/bitsdhruba/potterhead"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><button class="project__button">Github</button></a
+                  >
+
+                  <a
+                    ><button class="project__button disabled" disabled>
+                      Visit Site
+                    </button></a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="project" data-aos="fade-up-left" style="--clr: #954223">
+              <div>
+                <img
+                  src="./assets/photobooth.png"
+                  alt="Pet dog"
+                  class="project__image"
+                />
+              </div>
+              <div class="project__detail">
+                <h2 class="project__title">Portfolio</h2>
+                <p>
+                  A responsive minimalistic portfolio of a photographer. Built
+                  using HTML, CSS, JavaScript and Bootstrap.
+                </p>
+                <div class="project__button_div">
+                  <a
+                    href="https://github.com/bitsdhruba/Photobooth"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><button class="project__button">Github</button></a
+                  >
+
+                  <a
+                    href="https://bitsphotobooth.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><button class="project__button">Visit Site</button></a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        <section id="contact" class="contact__container hidden">
-          <div class="contact">
-            <h1 class="titles">Let's Connect</h1>
-            <form class="contact-form">
-              <label for="name" class="contact__label">Your name Please</label>
-              <input
-                required
-                type="text"
-                name="name"
-                id="name"
-                class="contact__input glass"
-              />
-              <label for="email" class="contact__label"
-                >Please Enter your Email</label
-              >
-              <input
-                required
-                type="email"
-                name="email"
-                id="email"
-                class="contact__input glass"
-              />
-              <label for="note" class="contact__label">Note for me</label>
-              <textarea
-                name="note"
-                id="note"
-                class="contact__input glass"
-              ></textarea>
-              <button class="contact-button">Send Message</button>
-            </form>
-            <p>
-              ** This form doesn't send me anything now, but if i build
-              something for you i'll make sure it definitely works perfectly.
-              you can contact me with my details provided.
-            </p>
-          </div>
-          <div class="contact contact__detail">
+        <section id="contact" class="contact">
+          <div class="contact__detail">
             <h1 class="titles">Get in Touch</h1>
-            <div class="contact__touch">
+            <div class="contact__touch" data-aos="fade-right">
+              <div>
+                <i class="fa-solid fa-phone contact__icons"></i>
+              </div>
               <div>
                 <h1>Through Call</h1>
                 <h2>69004-15809</h2>
               </div>
-              <div>
-                <i class="fa-solid fa-phone contact__icons"></i>
-              </div>
             </div>
-            <div class="contact__touch">
+            <div class="contact__touch" data-aos="fade-left">
+              <div>
+                <i class="fa-regular fa-envelope contact__icons"></i>
+              </div>
               <div>
                 <h1>Through Mail</h1>
                 <h2>borahdhruba2019@gmail.com</h2>
-              </div>
-              <div>
-                <i class="fa-regular fa-envelope contact__icons"></i>
               </div>
             </div>
             <div class="contact__socials">
@@ -452,10 +394,7 @@
               ></span>
             </div>
           </div>
-        </section>
-
-        <footer class="footer hidden">
-          <div>
+          <div class="navigation" data-aos="fade-up">
             <ul class="footer__list">
               <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
@@ -463,12 +402,15 @@
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
+        </section>
 
+        <footer class="footer">
           <h2>Thank You for Visiting.</h2>
         </footer>
       </div>
     </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script defer src="./js/script.js"></script>
   </body>
 </html>
